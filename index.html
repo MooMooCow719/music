@@ -9,16 +9,22 @@
     <div id="header-bar">
         <h1 id="title">Song Creator</h1>
         <input id="settings" type="button" style="background-image:url('data:,')"/>
+        <!--data:, will be replaced with something like images/settings.png-->
         <p>Credits</p>
     </div>
+
     <div id="main-board"></div>
+
     <div id="footer-bar">
+        <input id="tempo" type="range" min="0" max="100">
         <input id="piano" type="button" style="background-image:url('data:,')"/>
         <input id="guitar" type="button" style="background-image:url('data:,')"/>
+        <input id="steelpan" type="button" style="background-image:url('data:,')"/>
         <input id="xylo" type="button" style="background-image:url('data:,')"/>
-        <input id="tempo" type="range" min="0" max="100">
+        <input id="glass-xylo" type="button" style="background-image:url('data:,')"/>
         <input id="undo" type="button" style="background-image:url('data:,')"/>
         <input id="reset" type="button" style="background-image:url('data:,')"/>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
