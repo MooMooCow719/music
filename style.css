@@ -1,3 +1,7 @@
+#html{
+    font: 16px "Roboto", sans-serif;
+}
+
 #header-bar{
     position: absolute;
     left: 0px;
@@ -6,4 +10,27 @@
     top: 0px;
     box-sizing: border-box;
     border-bottom: 1px solid #21eaea;
+}
+
+#footer-bar{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+#footer-bar input[type="button"]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid purple;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    outline: none;
+}
+
+#footer-bar input[type="button"]:hover{
+    background-color: rgba(128, 0, 128, 0.1);
 }
