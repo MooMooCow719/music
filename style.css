@@ -30,6 +30,14 @@ body{
 
 }
 
+.horiz-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    border-left: 4px solid rgb(222, 185, 99);
+}
+
 .measure{
     display: flex;
     flex-direction: column;
