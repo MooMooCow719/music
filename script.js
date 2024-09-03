@@ -1,4 +1,4 @@
-const horizLines = 12;
+const horizLines = 14;
 let measures = 4;
 let notesPerMeasure = 4;
 
