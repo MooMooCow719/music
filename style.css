@@ -18,40 +18,40 @@ body{
     position: absolute;
     left: 0px;
     width: 100%;
-    height: 81px;
+    height: 15vh;
     top: 0px;
     box-sizing: border-box;
     border-bottom: 2px solid skyblue;
 }
 
 #main-board{
+    position: relative; 
     display: flex;
-    justify-content: space-between;
-
+    width: 100%;
+    height: 70vh; 
+    background-color: white;
+    border: 1px solid skyblue;
 }
 
 .horiz-line{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    position: relative;
-    border-left: 4px solid rgb(222, 185, 99);
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    background-color: rgba(128, 128, 128, 0.5);
 }
 
 .measure{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     border-left: 4px solid skyblue;
 }
 
 .note-div{
     position: absolute;
     width: 2px;
-    height: auto;
+    height: 100%; 
     background-color: rgba(128, 128, 128, 0.501);
-
 }
 
 #footer-bar{
@@ -60,7 +60,7 @@ body{
     justify-content: space-around; 
     align-items: center; 
     padding: 10px; 
-
+    height: 15vh;
 }
 
 #footer-bar input[type="button"]{
@@ -78,3 +78,4 @@ body{
 #footer-bar input[type="button"]:hover{
     background-color: rgba(128, 0, 128, 0.1);
 }
+
