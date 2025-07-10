@@ -234,8 +234,8 @@ function switchPage(){
     window.location.href = "index1.html";
 }
 
-const song1 = document.getElementById("song1");
-song1.addEventListener('click', () => startSong("song1"));
+// const song1 = document.getElementById("song1");
+// song1.addEventListener('click', () => startSong("song1"));
 
 // function startSong(songID){
 //     const guidedPiano = document.getElementById("guided-piano");
