@@ -237,17 +237,17 @@ function switchPage(){
 const song1 = document.getElementById("song1");
 song1.addEventListener('click', () => startSong("song1"));
 
-function startSong(songID){
-    const guidedPiano = document.getElementById("guided-piano");
-    guidedPiano.style.display = "block";
-    const noteArea = document.getElementById("note-area");
-    noteArea.style.display = "block";
-    const pianoArea = document.getElementById("piano-area");
-    pianoArea.style.display = "block";
-    const songSelect1 = document.getElementById("song-select");
-    songSelect1.style.display = "none";
-    muted = false;
-    if (songID == "song1"){
+// function startSong(songID){
+//     const guidedPiano = document.getElementById("guided-piano");
+//     guidedPiano.style.display = "block";
+//     const noteArea = document.getElementById("note-area");
+//     noteArea.style.display = "block";
+//     const pianoArea = document.getElementById("piano-area");
+//     pianoArea.style.display = "block";
+//     const songSelect1 = document.getElementById("song-select");
+//     songSelect1.style.display = "none";
+//     muted = false;
+//     if (songID == "song1"){
 
-    }
-}
+//     }
+// }

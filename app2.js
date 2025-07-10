@@ -260,8 +260,8 @@ function mainHandler(songID){
     nowplaying.textContent = "Now Playing: nop";
     nowplaying.style.fontSize = "3vh";
   }
-  console.log(activeSongInfoArray);
-  console.log(activeSongInfoArray[0].length);
+//   console.log(activeSongInfoArray);
+//   console.log(activeSongInfoArray[0].length);
   // for (let i=0; i<activeSongInfoArray.length; i++){
   //   moveNotes(false);
   // }
@@ -282,8 +282,8 @@ function makeNotes(){
   for (let i = currentNoteIndex; i < displayEnd; i++) {
     const row = activeSongInfoArray[i];
     if (!row) break; // SAFEGUARD: exit if undefined
-    console.log(currentNoteIndex);
-    console.log(displayEnd);
+    // console.log(currentNoteIndex);
+    // console.log(displayEnd);
     for (let j = 0; j < row.length; j++) {
       // console.log("1");
       newNote = document.createElement("div");
