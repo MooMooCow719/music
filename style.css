@@ -1,0 +1,330 @@
+*{
+    /* border: solid 1px black; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#a{
+    background-color: yellow;
+}
+
+html{
+    font-family: Tahoma, Courier, Arial;
+    font-weight: bold;
+    font-size: 2vh;
+    overflow: hidden;
+}
+
+body{
+    /* background-color:rgb(196, 233, 196); */
+    background-color: white;
+}
+
+#header-bar{
+    background-color: #f0a2dd;
+    color: #dd3eb5;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    font-size: 3vh;
+}
+
+#title{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.left{
+    flex-wrap: nowrap;
+    margin-left: 2vw;
+}
+
+.right{
+    flex-wrap: nowrap;
+    margin-right: 2vw;
+}
+
+#welcome-page{
+    height:90vh;
+    background-color: #f8ddf6;
+    opacity: 0.7;
+    background-image:  linear-gradient(#eb73b3 1.6px, transparent 1.6px), linear-gradient(to right, #eb73b3 1.6px, #f8ddf6 1.6px);
+    background-size: 32px 32px;
+    margin-top:0vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#info{
+    width: 90vw;
+    border: solid 2px maroon;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    height: 20vh;
+    background-color: #f1e2fb;
+    color: #7d0150;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vh;
+}
+
+#options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#freeplay-option{
+    margin-top: 5vh;
+    width: 40vw;
+    margin-left: 7vw;
+    /* margin-right: 5vw; */
+    cursor: pointer;
+    border: solid 2px maroon;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f1e2fb;
+    color: green;
+    font-size: 5vh;
+    padding-left: 9vw;
+}
+
+#songs-option{
+    margin-top: 5vh;
+    width: 40vw;
+    /* margin-left: 5vw; */
+    margin-right: 7vw;
+    cursor: pointer;
+    border: solid 2px maroon;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f1e2fb;
+    color: rgb(118, 118, 235);
+    font-size: 5vh;
+    padding-left: 4.25vw;
+}
+#note-history-div{
+    margin-top: 10vh;
+    display: flex;
+    width: 80vw;
+    margin-left: 10vw;
+    padding: 0;
+    height:25vh;
+}
+
+#note-history-box{
+    height: 25vh;
+    width: 80vw;
+    background-color: rgb(246, 254, 214);
+    color:rgb(48, 48, 140);
+    font-size: 3vh;
+    resize: none;
+    border: solid 1px rgb(2, 2, 73);
+}
+
+/* start piano css */
+
+#piano-container-div{
+    width: 90vw;
+    height: 45vh;
+    margin-top: 5vh;
+    margin-left:5vw;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#black-keys-div{
+    display: flex;
+    flex-direction: row;
+    z-index: 7;
+    position: absolute;
+}
+
+
+.black-key-group{
+    z-index: 8;
+    display: flex;
+    padding: 0;
+    margin:0;
+    flex-direction: row;
+    
+}
+
+#black-group-1{
+    position: absolute;
+    margin-top: 0;
+    margin-left:3vw;
+    display: flex;
+    justify-content: space-between;
+    width: 7vw;
+}
+
+#black-group-2{
+    position: absolute;
+    margin-top: 0;
+    margin-left:16vw;
+    display: flex;
+    justify-content: space-between;
+    width: 11vw;
+}
+
+#black-group-3{
+    position: absolute;
+    margin-top: 0;
+    margin-left:33vw;
+    display: flex;
+    justify-content: space-between;
+    width: 7vw;
+}
+
+#black-group-4{
+    position: absolute;
+    margin-top: 0;
+    margin-left:46vw;
+    display: flex;
+    justify-content: space-between;
+    width: 11vw;
+}
+
+#black-group-5{
+    position: absolute;
+    margin-top: 0;
+    margin-left:63vw;
+    display: flex;
+    justify-content: space-between;
+    width: 7vw;
+}
+
+#black-group-6{
+    position: absolute;
+    margin-top: 0;
+    margin-left:76vw;
+    display: flex;
+    justify-content: space-between;
+    width: 11vw;
+}
+
+
+
+.black-key{
+    z-index:9;
+    background-color: black;
+    color: white;
+    width:3vw;
+    font-size: 1vh;
+    height: 25vh;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 12vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5vh;
+    cursor:pointer;
+}
+
+#white-keys-div{
+    display: flex;
+    flex-direction: row;
+}
+
+#three-white, #four-white, #five-white{
+    display: flex;
+    padding: 0;
+    margin:0;
+    flex-direction: row;
+} 
+.white-key{
+    background-color: white;
+    width:4.28vw;
+    font-size:1vh;
+    height:45vh;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 4vh;
+    cursor: pointer;
+}
+
+.keyhint{
+    color: rgb(136, 136, 237);
+}
+
+.white-key:hover{
+    background-color: #edebeb;
+    box-shadow: 0 0 5px #edebeb;
+}
+
+.black-key:hover{
+    background-color: #333333;
+    box-shadow: 0 0 5px #333333;
+}
+
+.white-key.active {
+  background: #ccc;
+}
+
+.black-key.active {
+  background: #333333;
+}
+
+#freeplay-div{
+    display:none;
+    height: 90vh;
+    width:100vw;
+}
+
+#song-select{
+    display: none;
+    height:90vh;
+    width:100vw;
+}
+
+.song{
+    cursor: pointer;
+}
+
+#guided-piano{
+    display:none;
+}
+
+#guided-piano{
+    height:90vh;
+    width:100vw;
+    background-color: #c3edf7;
+    display: flex;
+    flex-direction: column;
+}
+
+#piano-area{
+    display: none;
+    z-index: 9;
+    position: absolute;
+    height:20vh;
+    bottom: 20vh;
+    border: solid 1px black;
+}
+
+#note-area{
+    display:none;
+    border: solid 2px yellow;
+}
+
+.smaller-piano{
+    transform: scale(0.75);
+}

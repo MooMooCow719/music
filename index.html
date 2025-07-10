@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Online Piano">
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <!-- <script src="app2.js" defer></script> -->
+    </head>
+    <body>
+
+        <div id="header-bar">
+                <div id="title">
+                    <div class="left">
+                        <h1 id="title-text" onclick="location.reload()" style="cursor: pointer;">Piano</h1>
+                    </div>
+                    <div class="right">
+                        <h1 id="credits">Made by MooMooCow719</h1>
+                    </div>
+                </div>
+        </div>
+
+        <div id="welcome-page">
+            <div id="info">
+                <h1>Play a 36 key piano online, with your keyboard or by clicking! Play freely with a log of your inputs or try full songs with note guides.</h1>
+                <h1 style="text-decoration: underline;">Now with autoplay!</h1>
+            </div>
+            <div id="options">
+                <div id="freeplay-box">
+                    <div id="freeplay-option">
+                        <h1>Freeplay</h1>
+                    </div>
+                </div>
+                <div id="songs-box">
+                    <div id="songs-option" onclick="switchPage()">
+                        <h1>Preset Songs</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div id="freeplay-div">
+            
+
+            <div id="note-history-div">
+                
+                <textarea id="note-history-box" placeholder="Notes played go here..."></textarea>
+            </div>
+
+            <div id="piano-container-div">
+                <div id="black-keys-div">
+                    <div class="black-key-group" id="black-group-1">
+                        <div class="black-key" id="C#3">
+                            <h1 class="keyhint">1</h1>
+                            <h1>C♯</h1>
+                        </div>
+                        <div class="black-key" id="D#3">
+                            <h1 class="keyhint">2</h1>
+                            <h1>D♯</h1>
+                        </div>
+                    </div>
+                    <div class="black-key-group" id="black-group-2">
+                        <div class="black-key" id="F#3">
+                            <h1 class="keyhint">3</h1>
+                            <h1>F♯</h1>
+                        </div>
+                        <div class="black-key" id="G#3">
+                            <h1 class="keyhint">4</h1>
+                            <h1>G♯</h1>
+                        </div>
+                        <div class="black-key" id="A#3">
+                            <h1 class="keyhint">5</h1>
+                            <h1>A♯</h1>
+                        </div>
+                    </div>
+                    <div class="black-key-group" id="black-group-3">
+                        <div class="black-key" id="C#4">
+                            <h1 class="keyhint">6</h1>
+                            <h1>C♯</h1>
+                        </div>
+                        <div class="black-key" id="D#4">
+                            <h1 class="keyhint">7</h1>
+                            <h1>D♯</h1>
+                        </div>
+                    </div>
+                    <div class="black-key-group" id="black-group-4">
+                        <div class="black-key" id="F#4">
+                            <h1 class="keyhint">8</h1>
+                            <h1>F♯</h1>
+                        </div>
+                        <div class="black-key" id="G#4">
+                            <h1 class="keyhint">9</h1>
+                            <h1>G♯</h1>
+                        </div>
+                        <div class="black-key" id="A#4">
+                            <h1 class="keyhint">0</h1>
+                            <h1>A♯</h1>
+                        </div>
+                    </div>
+                    <div class="black-key-group" id="black-group-5">
+                        <div class="black-key" id="C#5">
+                            <h1 class="keyhint">-</h1>
+                            <h1>C♯</h1>
+                        </div>
+                        <div class="black-key" id="D#5">
+                            <h1 class="keyhint">=</h1>
+                            <h1>D♯</h1>
+                        </div>
+                    </div>
+                    <div class="black-key-group" id="black-group-6">
+                        <div class="black-key" id="F#5">
+                            <h1 class="keyhint">P</h1>
+                            <h1>F♯</h1>
+                        </div>
+                        <div class="black-key" id="G#5">
+                            <h1 class="keyhint">[</h1>
+                            <h1>G♯</h1>
+                        </div>
+                        <div class="black-key" id="A#5">
+                            <h1 class="keyhint">]</h1>
+                            <h1>A♯</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="white-keys-div">
+                    <div id="three-white">
+                        <div class="white-key" id="C3">
+                            <h1 class="keyhint">W</h1>
+                            <h1>C</h1>
+                        </div>
+                        <div class="white-key" id="D3">
+                            <h1 class="keyhint">E</h1>
+                            <h1>D</h1>
+                        </div>
+                        <div class="white-key" id="E3">
+                            <h1 class="keyhint">R</h1>
+                            <h1>E</h1>
+                        </div>
+                        <div class="white-key" id="F3">
+                            <h1 class="keyhint">T</h1>
+                            <h1>F</h1>
+                        </div>
+                        <div class="white-key" id="G3">
+                            <h1 class="keyhint">Y</h1>
+                            <h1>G</h1>
+                        </div>
+                        <div class="white-key" id="A3">
+                            <h1 class="keyhint">U</h1>
+                            <h1>A</h1>
+                        </div>
+                        <div class="white-key" id="B3">
+                            <h1 class="keyhint">I</h1>
+                            <h1>B</h1>
+                        </div>
+                    </div>
+                    <div id="four-white">
+                        <div class="white-key" id="C4">
+                            <h1 class="keyhint">S</h1>
+                            <h1>C</h1>
+                        </div>
+                        <div class="white-key" id="D4">
+                            <h1 class="keyhint">D</h1>
+                            <h1>D</h1>
+                        </div>
+                        <div class="white-key" id="E4">
+                            <h1 class="keyhint">F</h1>
+                            <h1>E</h1>
+                        </div>
+                        <div class="white-key" id="F4">
+                            <h1 class="keyhint">G</h1>
+                            <h1>F</h1>
+                        </div>
+                        <div class="white-key" id="G4">
+                            <h1 class="keyhint">H</h1>
+                            <h1>G</h1>
+                        </div>
+                        <div class="white-key" id="A4">
+                            <h1 class="keyhint">J</h1>
+                            <h1>A</h1>
+                        </div>
+                        <div class="white-key" id="B4">
+                            <h1 class="keyhint">K</h1>
+                            <h1>B</h1>
+                        </div>
+                    </div>
+                    <div id="five-white">
+                        <div class="white-key" id="C5">
+                            <h1 class="keyhint">Z</h1>
+                            <h1>C</h1>
+                        </div>
+                        <div class="white-key" id="D5">
+                            <h1 class="keyhint">X</h1>
+                            <h1>D</h1>
+                        </div>
+                        <div class="white-key" id="E5">
+                            <h1 class="keyhint">C</h1>
+                            <h1>E</h1>
+                        </div>
+                        <div class="white-key" id="F5">
+                            <h1 class="keyhint">V</h1>
+                            <h1>F</h1>
+                        </div>
+                        <div class="white-key" id="G5">
+                            <h1 class="keyhint">B</h1>
+                            <h1>G</h1>
+                        </div>
+                        <div class="white-key" id="A5">
+                            <h1 class="keyhint">N</h1>
+                            <h1>A</h1>
+                        </div>
+                        <div class="white-key" id="B5">
+                            <h1 class="keyhint">M</h1>
+                            <h1>B</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+
+    </body>
+</html>
