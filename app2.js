@@ -238,8 +238,16 @@ const song3 = document.getElementById("song3");
 const song4 = document.getElementById("song4");
 const song5 = document.getElementById("song5");
 
-song1.addEventListener('click', () => mainHandler("song1info"));
-song2.addEventListener('click', () => mainHandler("song2info"));
+song1.addEventListener('click', () => {
+  nukeDisplay();
+  mainHandler("song1info");
+});
+
+song2.addEventListener('click', () => {
+  nukeDisplay();
+  mainHandler("song2info");
+});
+
 song3.addEventListener('click', () => mainHandler("song3info"));
 song4.addEventListener('click', () => mainHandler("song4info"));
 song5.addEventListener('click', () => mainHandler("song5info"));
@@ -3286,7 +3294,7 @@ function makeBlue(){
 
     const songs = document.getElementsByClassName("song");
     for (let i = 0; i < songs.length; i++) {
-        songs[i].style.backgroundColor = "rgb(104, 180, 231)";
+        songs[i].style.backgroundColor = "powderblue";
         songs[i].style.color = "white";
         songs[i].style.border = "solid 2px slategrey";
     }
@@ -3297,12 +3305,12 @@ function makeBlue(){
     document.getElementById("ezplay").style.color = "white";
     document.getElementById("reset").style.backgroundColor = "rgba(246, 57, 92, 0.312)";
     document.getElementById("reset").style.color = "white";
-    // const testNotes = document.getElementsByClassName("test-note");
+    const testNotes = document.getElementsByClassName("test-note");
 
-    // for (let i = 0; i < testNotes.length; i++) {
-    //     testNotes[i].style.backgroundColor = "rgb(47, 85, 190)";
-    //     testNotes[i].style.border = "solid 1px grey"; 
-    // }
+    for (let i = 0; i < testNotes.length; i++) {
+        testNotes[i].style.backgroundColor = "rgb(47, 85, 190)";
+        testNotes[i].style.border = "solid 1px grey"; 
+    }
 
     const keyHints = document.getElementsByClassName("keyhint");
     for (let i = 0; i < keyHints.length; i++) {

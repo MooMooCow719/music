@@ -402,7 +402,8 @@ body{
     width: 20vw;
     height: 10vh;
     
-    background-color: rgb(104, 180, 231);
+    /* background-color: rgb(104, 180, 231); */
+    background-color: powderblue;
     color: white;
     border: solid 2px slategrey;
     margin-top:1vh;
@@ -457,7 +458,7 @@ body{
     width: calc(0.75 * 4.28vw);
     height: 5vh;
     /* background-color: rgb(105, 105, 234); */
-    background-color: #ef457b92;
+    background-color: rgba(239, 69, 123, 0.57);
     border: solid 1px grey;
     position: absolute;
     /* bottom: 7vh; */
