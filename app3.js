@@ -503,7 +503,7 @@ function mainHandler(songID){
     let nowplaying = document.getElementById("now-playing");
     nowplaying.textContent = "Now Playing: Lustrous Stars";
     nowplaying.style.fontSize = "3vh";
-    autoplaybpm = 142;
+    autoplaybpm = 139;
   }
   if (songID == "song12info"){
     activeSongForbiddenArray = song12forbiddeninfo;
