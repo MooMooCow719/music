@@ -42,6 +42,10 @@ body{
 .left{
     flex-wrap: nowrap;
     margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .right{
@@ -385,7 +389,7 @@ body{
 }
 
 #song-select{
-    margin-top: 5vh;
+    margin-top: 2vh;
     background-color: rgb(248, 244, 237);
     border: solid 2px rgb(82, 82, 226);
     width: 25vw;
@@ -424,7 +428,8 @@ body{
     border: solid 2px slategrey;
     font-size: 1.5vh;
     margin-bottom:0;
-    overflow-y:hidden;
+    overflow-y:auto;
+    scrollbar-color: lightgray azure;
 }
 
 #ezplay{
@@ -510,6 +515,62 @@ body{
 #purple{
     background-color: rgb(167, 20, 167);
 }
+
+#metronome{
+    width: 25vw;
+    height: 7vh;
+    background-color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid 2px grey;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom:0;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+}
+
+#metronome-start, #metronome-reset{
+    width: 4vw;
+    height: 3vh;
+}
+
+#metronome-input{
+    width: 6vw;
+}
+
+#currentbpm{
+    width: 20vw;
+    height: 5vh;
+    background-color: azure;
+    border: solid 2px grey;
+    margin:0;
+    font-size:1vh;
+    /* padding: auto; */
+    display:flex; /* HOW TO PROPERLY CENTER INSIDE FLEX */
+    align-items: center;
+    justify-content: center;
+}
+
+#addSongDiv{
+    margin-left:3.5vw;
+    font-size:2vh;
+    width: 9vw;
+    height: 7vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    background-color: azure;
+    border: solid 2px grey;
+    padding-left: 1.2vw;
+}
+
+
+
+
+
 
 
 

@@ -3,10 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Online Piano" content="Online Piano">
+        <meta name="description" content="Play piano online with your keyboard!">
+        <meta name="author" content="MooMooCow719">
+        <title>Piano Online</title>
         <link rel="stylesheet" href="style1.css">
-        <script src="app2.js" defer></script>
-        <!-- <script src="app2.js" defer></script> -->
+        <link href="data:image/x-icon;base64,AAA
+        BAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHM
+        z1/0L2//9Z+f//S+///xWb1dsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANrOH9T/D+/47+/v+x//7/tv7+/6z+/P+M////Nej8/57R6hYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAQpOP/Hsr4/1/o+/+F/fz/k//+/5n+/P+U//z/g/7+/2Ty/f8c0fv/BQcIAQAAAAAAAAAAAAAAAAAAAACOx8cFB6b8/zW5+f9X0P3/c9/+/3rh+/994Pz/d975/2rZ+/9S0fz/Mr/+/w2n//8AAAAAAAAAAAA
+        AAAAAAAAADZXx/w6W+/8yqv3/Trn3/2HJ/v9q1P7/atL9/2LL/P9awvz/QLX6/yem//8Hlv//AAAAAAAAAAAAAAAAAAAAAAeL/f8Kh/b/KZr6/zqm9P9GrvX/ULX1/1S4+P9LtfX/Qav4/zCd/P8Skvv/Anrx/
+        2Gq32IAAAAAAAAAAAAAAAADivj/BHzj/xKM8P8plvf/MZ31/zih9P86ovX/L531/yya+f8ckfT/A4Dp/wZy0f9jreKKAAAAAAAAAAAAAAAAFoXp/wNy1/8MiOz/Tqz1/2G1/f9ktPv/Wqvu/1qv9f9Zrv7/Eozo
+        /wB52P8IbMX/XXh4BAAAAAAAAAAAAAAAAIfJ8XgBdNX/FoDP/4TI/f+Fx/r/gsf7/37D/P9+xvz/hMf4/3fD/P8AeNT/BIDm/wAAAAAAAAAAAAAAAAAAAAAAAAAAFJDq/x97wf++3/z/uuH9/7rf+/+94v7/ut78
+        /7ve/f+65v//BXbM/4XB5xgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAemfT/x/D//+ny/P/p8/z/4Pr6/8bv2v9wp37/FXB6/1Kp1vAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOX3/wcwnev/C0Nx
+        /wFLN/9o2n7/ZNN2/2PMY/8dfDv/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFGJwP9+qceXTrxp/06uVP8+nz//MZMv/0+hSP9asEz/DWkZ/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAxbJr/mMbccAAAAAA+nk//Qpk//0KXP/9hq1n/bqpk/3mybv+OzIv/hrylbwAAAAAAAAAAAAAAAAAAAAAAAAAACTZi/4KpvEoAAAAAAAAAALXXzBBNnlH/jseD/5K9if+qzqL/qteo/yhwMf8AAAAAA
+        AAAAAAAAAAAAAAAP2+buZSv0P/X19cBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8H8AAMA/AACAHwAAgA8AAAAPAAAADwAAAAcAAAAPAACADwAAgB8AAMAfAADwHwAA+AMAAPsBAAD7wAA
+        A8/8AAA==" rel="icon" type="image/x-icon">
+        <!-- favicon image from hehe on favicon.cc -->
+
+        
+        <!-- <script src="app3.js" type="module" defer></script> -->
+        <!-- <script src="miniapp.js" defer></script> -->
+        <script src="app3.js" defer></script>
     </head>
     <body>
 
@@ -14,6 +32,10 @@
                 <div id="title">
                     <div class="left">
                         <h1 id="title-text" onclick="switchPage()" style="cursor: pointer;">Piano</h1>
+                        <!-- <div id="addSongDiv">
+                            <label for="add-song-div">Add your own song! (.mid)</label>
+                            <input type="file" id="addSong" accept=".mid" />
+                        </div> -->
                     </div>
                     <div class="right">
                         <h1 id="credits">Made by MooMooCow719</h1>
@@ -259,18 +281,27 @@
             </div>
             
             <div id="misc">
+                <div id="metronome">
+                    <label for="metronome-input">Metronome BPM:</label>
+                    <input type="number" id="metronome-input" name="metronome-input" required min="10" max="240" step="5" placeholder="use arrows!">
+                    <button id="metronome-start">Start</button>
+                    <button id="metronome-reset">Reset</button>
+                </div>
 
+                <div id="currentbpm">
+                    <h1 id="currbpmh1">Current BPM:</h1>
+                </div>
                 <div id="song-select">
-                    <div id="song1" class="song">Fallen Down (Reprise) - Toby Fox</div>
-                    <div id="song2" class="song">nop - ChenYueLong</div>
-                    <div id="song3" class="song">idk</div>
-                    <div id="song4" class="song">idk</div>
-                    <div id="song5" class="song">idk</div>
-                    <div id="song6" class="song">idk</div>
-                    <div id="song7" class="song">idk</div>
-                    <div id="song8" class="song">idk</div>
-                    <div id="song9" class="song">idk</div>
-                    <div id="song10" class="song">idk</div>
+                    <div id="song1" class="song">Fallen Down (Reprise) - Toby Fox (110)</div>
+                    <div id="song2" class="song">nop - ChenYueLong (138)</div>
+                    <div id="song3" class="song">One Summer's Day (from Spirited Away)- Joe Hisaishi (143)</div>
+                    <div id="song4" class="song">Golden Hour - JVKE (094)</div>
+                    <div id="song5" class="song">Hello Marina Inst (inabakumori/NekoOkto) (180)</div>
+                    <div id="song6" class="song">Venom Inst (Kairiki Bear/NekoOkto) (205)</div>
+                    <div id="song7" class="song">Que le vent soit doux - Hoyoverse (102)</div>
+                    <div id="song8" class="song">Nocturnal Illumination - Hoyoverse (135)</div>
+                    <div id="song9" class="song">Kyu Kurarin (iyowa/BelowAverage) (220)</div>
+                    <div id="song10" class="song">being low as dirt, taking what's important from me (TUYU/Haoto) (225)</div>
                     <div id="song11" class="song">idk</div>
                     <div id="song12" class="song">idk</div>
                     <div id="song13" class="song">idk</div>
