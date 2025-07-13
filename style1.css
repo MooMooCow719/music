@@ -423,8 +423,8 @@ body{
 #now-playing{
     width: 20vw;
     height: 10vh;
-    background-color: #cbe1ee;
-    color: grey;
+    background-color: powderblue;
+    color: white;
     border: solid 2px slategrey;
     font-size: 1.5vh;
     margin-bottom:0;
